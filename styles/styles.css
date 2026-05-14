@@ -1,3 +1,14 @@
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    padding: 0.5rem;
+    display: block;
+}
+
 h1 {
     color: darkblue;
 }
