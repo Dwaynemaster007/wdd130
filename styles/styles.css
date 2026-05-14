@@ -1,5 +1,17 @@
+h1 {
+    color: darkblue;
+}
+
 main {
     max-width: 840px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 2px solid #ccc;
+    padding: 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 aside {
@@ -14,11 +26,6 @@ aside {
 
 aside img {
     width: 200px;
-    height: auto;
-}
-
-main img {
-    width: 150px;
     height: auto;
 }
 
