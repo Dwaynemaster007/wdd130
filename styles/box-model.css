@@ -1,0 +1,39 @@
+/* The container for the entire card */
+.callout {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #000;
+    box-sizing: border-box;
+    /* Best practice to include padding in width */
+}
+
+/* Styling the image inside the card */
+.callout img {
+    float: right;
+    /* This moves the image to the right of the text */
+    margin: 0 0 10px 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+    width: 100px;
+    height: auto;
+}
+
+/* The scripture text */
+blockquote {
+    margin: 0;
+}
+
+/* The scripture reference at the bottom */
+cite {
+    display: block;
+    /* Moves the citation to its own line */
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 0.85em;
+    margin-top: 10px;
+}
