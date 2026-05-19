@@ -1,37 +1,53 @@
+:root {
+    --primary-color: #333;
+    --accent-color: darkblue;
+    --light-bg-color: #eee;
+    --border-color: rgb(0 0 0 / 0.2);
+    --img-border-color: #ccc;
+
+    --standard-padding: 1rem;
+    --item-padding: 0.5rem;
+    --img-padding: 5px;
+    --standard-margin: 1rem;
+
+    --main-max-width: 840px;
+    --aside-width: 20rem;
+}
+
 nav {
-    background-color: #333;
-    padding: 1rem;
+    background-color: var(--primary-color);
+    padding: var(--standard-padding);
 }
 
 nav a {
     color: white;
-    padding: 0.5rem;
+    padding: var(--item-padding);
     display: block;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--accent-color);
 }
 
 main {
-    max-width: 840px;
+    max-width: var(--main-max-width);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 2px solid #ccc;
-    padding: 5px;
+    border: 2px solid var(--img-border-color);
+    padding: var(--img-padding);
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: var(--aside-width);
+    margin: var(--standard-margin);
+    border: 1px solid var(--border-color);
+    padding: var(--standard-padding);
+    background-color: var(--light-bg-color);
+    color: var(--primary-color);
     text-align: center;
 }
 
