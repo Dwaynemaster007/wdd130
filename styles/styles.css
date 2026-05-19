@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #333;
     --accent-color: darkblue;
@@ -39,21 +45,34 @@ main img {
     border: 2px solid var(--img-border-color);
     padding: var(--img-padding);
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 aside {
     width: var(--aside-width);
-    margin: var(--standard-margin);
-    border: 1px solid var(--border-color);
-    padding: var(--standard-padding);
-    background-color: var(--light-bg-color);
-    color: var(--primary-color);
     text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 aside img {
     width: 200px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 p {
@@ -64,4 +83,13 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    padding: var(--standard-padding) 0;
+}
+
+.box {
+    margin: var(--standard-margin);
+    border: 1px solid var(--border-color);
+    padding: var(--standard-padding);
+    background-color: var(--light-bg-color);
+    color: var(--primary-color);
 }
