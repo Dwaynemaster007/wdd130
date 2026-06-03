@@ -4,28 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W05 Learning Activity: HTML Forms - Poll</title>
+    <title>W05 Learning Activity: HTML Forms - Styled Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
     <header>
         <h1>W05 Learning Activity: HTML Forms</h1>
-        <p>Web Fundamentals Class Poll</p>
+        <p style="text-align: center;">Class Web Development Fundamentals Poll</p>
     </header>
 
     <main>
         <form action="#" method="get">
-            <div>
+            <div class="form-item column2">
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" name="fullname" required>
             </div>
 
-            <div>
+            <div class="form-item column2">
                 <label for="useremail">Email:</label>
                 <input type="email" id="useremail" name="useremail" required>
             </div>
 
-            <div>
+            <div class="form-item column1">
                 <label for="browser">What is your favorite internet browser?</label>
                 <select id="browser" name="browser">
                     <option value="" disabled selected>Choose a browser</option>
@@ -37,25 +38,25 @@
                 </select>
             </div>
 
-            <div>
+            <div class="form-item column1">
                 <label for="pet">Do you have a household pet?</label>
                 <input type="checkbox" id="pet" name="pet">
             </div>
 
-            <div>
+            <div class="form-item block-layout">
                 <label for="feedback">List the places you have lived:</label>
                 <textarea id="feedback" name="feedback" rows="4"
                   placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
             </div>
 
-            <div>
+            <div class="form-actions">
                 <button type="submit">Submit Poll</button>
             </div>
         </form>
     </main>
 
     <footer>
-        <p>&copy; 2026 | WDD 130 Web Fundamentals | Class Poll Activity</p>
+        <p>&copy; 2026 | WDD 130 Web Fundamentals | Class Poll Activity Styled</p>
     </footer>
 </body>
 
