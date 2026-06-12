@@ -15,8 +15,8 @@
     --light-bg: #fafafa;
     --text-muted: #555555;
     --border-light: rgba(0, 0, 0, 0.08);
-    --shadow-soft: rgba(0, 0, 0, 0.1);
-    --shadow-medium: rgba(0, 0, 0, 0.2);
+    --shadow-sm: rgba(0, 0, 0, 0.1);
+    --shadow-md: rgba(0, 0, 0, 0.2);
     --focus-ring: rgba(12, 74, 96, 0.3);
     --overlay-dark: rgba(29, 53, 87, 0.75);
     --overlay-light: rgba(255, 255, 255, 0.9);
@@ -119,7 +119,7 @@ header nav a:hover {
     background-color: var(--overlay-light);
     padding: 1.5rem;
     border-radius: 4px;
-    box-shadow: 0 4px 15px var(--shadow-medium);
+    box-shadow: 0 4px 15px var(--shadow-md);
 }
 
 .hero article img {
@@ -167,7 +167,7 @@ header nav a:hover {
     align-items: start;
 }
 
-/* Images */
+/* Shared Image Styles */
 .history-img,
 .promo-card img {
     width: 100%;
@@ -176,7 +176,7 @@ header nav a:hover {
 
 .history-img {
     height: auto;
-    box-shadow: 0 2px 8px var(--shadow-soft);
+    box-shadow: 0 2px 8px var(--shadow-sm);
 }
 
 /* Adventure Grid */
@@ -397,7 +397,7 @@ header nav a:hover {
     padding: 0.75rem 2rem;
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0 2px 4px var(--shadow-soft);
+    box-shadow: 0 2px 4px var(--shadow-sm);
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
