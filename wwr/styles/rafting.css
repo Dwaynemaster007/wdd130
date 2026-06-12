@@ -10,6 +10,9 @@
     --accent1-color: #1d3557;
     --accent2-color: #f1faee;
     --text-dark: #2b2d42;
+    --white: #ffffff;
+    --light-bg: #fafafa;
+    --border-light: rgba(0, 0, 0, 0.08);
 
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: "Arial", "Helvetica", sans-serif;
@@ -27,7 +30,7 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 header {
@@ -163,7 +166,7 @@ article {
     padding: 16px;
     text-align: center;
     background-color: rgba(29, 53, 87, 0.75);
-    color: #ffffff;
+    color: var(--white);
     font-size: 2.5rem;
 }
 
@@ -268,7 +271,7 @@ footer {
 .staff-card {
     flex: 1;
     background-color: var(--accent2-color);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-light);
     border-radius: 6px;
     overflow: hidden;
     text-align: center;
@@ -306,7 +309,7 @@ footer {
 .contact-form {
     display: grid;
     gap: 1.25rem;
-    background-color: #fafafa;
+    background-color: var(--light-bg);
     padding: 2rem;
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 6px;
@@ -393,7 +396,7 @@ footer {
 
 .contact-form button[type="submit"] {
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: var(--white);
     font-family: var(--body-font);
     font-size: 1.1rem;
     font-weight: bold;
@@ -411,4 +414,287 @@ footer {
 
 .contact-form button[type="submit"]:active {
     transform: scale(0.98);
+}
+
+.cta-container {
+    margin-top: 1.25rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding: 0.75rem 1.75rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent1-color);
+    color: var(--white);
+}
+
+.cta-button:active {
+    transform: scale(0.97);
+}
+
+.promo-grid-section {
+    margin: 2.5rem 2rem;
+}
+
+.promo-grid-section h2 {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 6px;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.promo-card {
+    background-color: var(--light-bg);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.promo-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.promo-card h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.newsletter-section {
+    margin: 2.5rem 2rem;
+    background-color: var(--light-bg);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    padding: 2rem;
+}
+
+.newsletter-section h2 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.newsletter-section > p {
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+
+.newsletter-form {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.newsletter-group {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.newsletter-group label {
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 0.65rem;
+    font-size: 1rem;
+    font-family: var(--body-font);
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 4px rgba(12, 74, 96, 0.3);
+}
+
+.newsletter-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+
+.newsletter-form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-family: var(--body-font);
+    font-size: 1.05rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.newsletter-form button[type="submit"]:hover {
+    background-color: var(--accent1-color);
+}
+
+.newsletter-form button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+.trips-intro-section {
+    padding: 2rem 2rem 1rem;
+}
+
+.trips-intro-section h1 {
+    margin-bottom: 0.75rem;
+}
+
+.trips-cta-banner {
+    margin-top: 1.5rem;
+    background-color: var(--accent1-color);
+    color: var(--white);
+    padding: 1.25rem 1.5rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trips-cta-banner span {
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+.trips-contact-btn {
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.65rem 1.25rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.trips-contact-btn:hover {
+    background-color: #e7924c;
+    color: var(--text-dark);
+}
+
+.trips-contact-btn:active {
+    transform: scale(0.97);
+}
+
+.trips-display-section {
+    margin: 2rem;
+}
+
+.trips-display-section h2 {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 6px;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.trip-card {
+    background-color: var(--light-bg);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.02);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.trip-card-content {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-card-content h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+}
+
+.table-summary-section {
+    margin: 2.5rem 2rem 3rem;
+}
+
+.table-summary-section h2 {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 6px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+    border: 1px solid var(--border-light);
+}
+
+.trips-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: bold;
+    padding: 0.85rem 1rem;
+}
+
+.trips-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--border-light);
+    background-color: var(--white);
+}
+
+.trips-table tbody tr:nth-child(even) td {
+    background-color: var(--light-bg);
+}
+
+.trips-table tbody tr:hover td {
+    background-color: rgba(244, 162, 97, 0.08);
 }
