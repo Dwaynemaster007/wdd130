@@ -5,28 +5,26 @@
 }
 
 :root {
-    /* Main Brand Palette */
     --primary-color: #0c4a60;
     --secondary-color: #f4a261;
     --secondary-hover: #e7924c;
     --accent1-color: #1d3557;
     --accent2-color: #f1faee;
     --text-dark: #2b2d42;
-
-    /* Audit Compliant Grayscale Variables */
     --white: #ffffff;
     --light-bg: #fafafa;
     --text-muted: #555555;
     --border-light: rgba(0, 0, 0, 0.08);
+    --shadow-soft: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.2);
+    --focus-ring: rgba(12, 74, 96, 0.3);
     --overlay-dark: rgba(29, 53, 87, 0.75);
     --overlay-light: rgba(255, 255, 255, 0.9);
-
-    /* Typography */
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: "Arial", "Helvetica", sans-serif;
 }
 
-/* Global Elements */
+/* Global */
 body {
     font-family: var(--body-font);
     color: var(--text-dark);
@@ -60,7 +58,7 @@ img {
     display: block;
 }
 
-/* Structural Header Area */
+/* Header */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -89,7 +87,7 @@ header nav a:hover {
     color: var(--secondary-color);
 }
 
-/* Hero Banners */
+/* Hero */
 .hero {
     position: relative;
     margin-bottom: 2rem;
@@ -121,7 +119,7 @@ header nav a:hover {
     background-color: var(--overlay-light);
     padding: 1.5rem;
     border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px var(--shadow-medium);
 }
 
 .hero article img {
@@ -134,7 +132,7 @@ header nav a:hover {
     border-radius: 4px;
 }
 
-/* Reusable Content Sections & Layout Grids */
+/* Section Margins */
 .history-section,
 .adventure-section,
 .promo-grid-section,
@@ -145,6 +143,7 @@ header nav a:hover {
     margin: 2.5rem 2rem;
 }
 
+/* Section Headings */
 .history-section h2,
 .adventure-section h2,
 .promo-grid-section h2,
@@ -158,6 +157,7 @@ header nav a:hover {
     padding-bottom: 6px;
 }
 
+/* Two-Column Grids */
 .history-container,
 .promo-grid,
 .company-directory-section {
@@ -167,6 +167,7 @@ header nav a:hover {
     align-items: start;
 }
 
+/* Images */
 .history-img,
 .promo-card img {
     width: 100%;
@@ -175,10 +176,10 @@ header nav a:hover {
 
 .history-img {
     height: auto;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px var(--shadow-soft);
 }
 
-/* Adventure Grid Component */
+/* Adventure Grid */
 .adventure-grid {
     display: flex;
     justify-content: space-between;
@@ -208,7 +209,7 @@ header nav a:hover {
     color: var(--text-dark);
 }
 
-/* Shared Promotional & Visual Cards */
+/* Cards */
 .promo-card,
 .staff-card,
 .trip-card {
@@ -228,7 +229,7 @@ header nav a:hover {
     margin-bottom: 1rem;
 }
 
-/* Team Component Styles */
+/* Staff */
 .profiles-flexbox {
     display: flex;
     justify-content: space-between;
@@ -264,7 +265,7 @@ header nav a:hover {
     font-style: italic;
 }
 
-/* Directory Callouts & Frames */
+/* Directory */
 .company-directory-section {
     margin: 0 2rem 2rem;
 }
@@ -281,7 +282,7 @@ header nav a:hover {
     border-radius: 4px;
 }
 
-/* Unified Form Structures (Contact / Newsletter) */
+/* Forms */
 .contact-form,
 .newsletter-form {
     display: grid;
@@ -329,7 +330,7 @@ header nav a:hover {
 .newsletter-form input:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 4px rgba(12, 74, 96, 0.3);
+    box-shadow: 0 0 4px var(--focus-ring);
 }
 
 .vertical-stack {
@@ -381,33 +382,23 @@ header nav a:hover {
     margin-top: 0.5rem;
 }
 
-/* Button & Call to Action Components */
+/* Buttons */
 .contact-form button[type="submit"],
 .newsletter-form button[type="submit"],
 .cta-button {
+    display: inline-block;
     background-color: var(--primary-color);
     color: var(--white);
     font-family: var(--body-font);
     font-weight: bold;
+    font-size: 1.05rem;
     border: none;
     border-radius: 4px;
+    padding: 0.75rem 2rem;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.contact-form button[type="submit"],
-.newsletter-form button[type="submit"] {
-    font-size: 1.1rem;
-    padding: 0.75rem 2.25rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.cta-button {
-    display: inline-block;
     text-decoration: none;
-    font-size: 1.05rem;
-    padding: 0.75rem 1.75rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 4px var(--shadow-soft);
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .contact-form button[type="submit"]:hover,
@@ -422,7 +413,7 @@ header nav a:hover {
     transform: scale(0.98);
 }
 
-/* Trips Grid Cards */
+/* Trips Grid */
 .trips-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -447,7 +438,7 @@ header nav a:hover {
     flex-direction: column;
 }
 
-/* Additional Callouts */
+/* Trips CTA Banner */
 .trips-cta-banner {
     margin-top: 1.5rem;
     background-color: var(--accent1-color);
@@ -458,9 +449,6 @@ header nav a:hover {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-}
-
-.trips-cta-banner span {
     font-weight: bold;
     font-size: 1.05rem;
 }
@@ -479,7 +467,7 @@ header nav a:hover {
     background-color: var(--secondary-hover);
 }
 
-/* Tabular Data Components */
+/* Table */
 .table-container {
     width: 100%;
     overflow-x: auto;
@@ -514,7 +502,7 @@ header nav a:hover {
     background-color: var(--border-light);
 }
 
-/* Global Layout Footer Section */
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
