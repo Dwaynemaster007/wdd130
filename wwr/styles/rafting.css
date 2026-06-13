@@ -14,17 +14,16 @@
     --white: #ffffff;
     --light-bg: #fafafa;
     --text-muted: #555555;
-    --border-light: rgba(0, 0, 0, 0.08);
-    --shadow-sm: rgba(0, 0, 0, 0.1);
-    --shadow-md: rgba(0, 0, 0, 0.2);
-    --focus-ring: rgba(12, 74, 96, 0.3);
-    --overlay-dark: rgba(29, 53, 87, 0.75);
-    --overlay-light: rgba(255, 255, 255, 0.9);
+    --border-light: #00000014;
+    --shadow-sm: #0000001a;
+    --shadow-md: #00000033;
+    --focus-ring: #0c4a604d;
+    --overlay-dark: #1d3557bf;
+    --overlay-light: #ffffffe6;
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: "Arial", "Helvetica", sans-serif;
 }
 
-/* Global */
 body {
     font-family: var(--body-font);
     color: var(--text-dark);
@@ -58,7 +57,6 @@ img {
     display: block;
 }
 
-/* Header */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -71,8 +69,6 @@ header nav ul {
     list-style-type: none;
     display: flex;
     gap: 1.5rem;
-    margin: 0;
-    padding: 0;
     justify-content: flex-end;
 }
 
@@ -87,7 +83,6 @@ header nav a:hover {
     color: var(--secondary-color);
 }
 
-/* Hero */
 .hero {
     position: relative;
     margin-bottom: 2rem;
@@ -132,7 +127,6 @@ header nav a:hover {
     border-radius: 4px;
 }
 
-/* Section Margins */
 .history-section,
 .adventure-section,
 .promo-grid-section,
@@ -143,7 +137,6 @@ header nav a:hover {
     margin: 2.5rem 2rem;
 }
 
-/* Section Headings */
 .history-section h2,
 .adventure-section h2,
 .promo-grid-section h2,
@@ -157,7 +150,6 @@ header nav a:hover {
     padding-bottom: 6px;
 }
 
-/* Two-Column Grids */
 .history-container,
 .promo-grid,
 .company-directory-section {
@@ -167,7 +159,6 @@ header nav a:hover {
     align-items: start;
 }
 
-/* Shared Image Styles */
 .history-img,
 .promo-card img {
     width: 100%;
@@ -179,7 +170,6 @@ header nav a:hover {
     box-shadow: 0 2px 8px var(--shadow-sm);
 }
 
-/* Adventure Grid */
 .adventure-grid {
     display: flex;
     justify-content: space-between;
@@ -209,14 +199,12 @@ header nav a:hover {
     color: var(--text-dark);
 }
 
-/* Cards */
 .promo-card,
 .staff-card,
 .trip-card {
     background-color: var(--light-bg);
     border: 1px solid var(--border-light);
     border-radius: 6px;
-    overflow: hidden;
 }
 
 .promo-card {
@@ -229,7 +217,6 @@ header nav a:hover {
     margin-bottom: 1rem;
 }
 
-/* Staff */
 .profiles-flexbox {
     display: flex;
     justify-content: space-between;
@@ -246,7 +233,6 @@ header nav a:hover {
     width: 100%;
     height: 200px;
     object-fit: contain;
-    background-color: var(--accent2-color);
     padding-top: 8px;
 }
 
@@ -265,7 +251,6 @@ header nav a:hover {
     font-style: italic;
 }
 
-/* Directory */
 .company-directory-section {
     margin: 0 2rem 2rem;
 }
@@ -282,7 +267,6 @@ header nav a:hover {
     border-radius: 4px;
 }
 
-/* Forms */
 .contact-form,
 .newsletter-form {
     display: grid;
@@ -344,7 +328,6 @@ header nav a:hover {
 }
 
 .radio-flex label {
-    font-weight: normal;
     color: var(--text-dark);
     display: flex;
     align-items: center;
@@ -364,7 +347,6 @@ header nav a:hover {
 }
 
 .checkbox-align label {
-    font-weight: normal;
     cursor: pointer;
 }
 
@@ -382,7 +364,6 @@ header nav a:hover {
     margin-top: 0.5rem;
 }
 
-/* Buttons */
 .contact-form button[type="submit"],
 .newsletter-form button[type="submit"],
 .cta-button {
@@ -413,7 +394,6 @@ header nav a:hover {
     transform: scale(0.98);
 }
 
-/* Trips Grid */
 .trips-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -438,7 +418,6 @@ header nav a:hover {
     flex-direction: column;
 }
 
-/* Trips CTA Banner */
 .trips-cta-banner {
     margin-top: 1.5rem;
     background-color: var(--accent1-color);
@@ -460,23 +439,19 @@ header nav a:hover {
     font-weight: bold;
     padding: 0.65rem 1.25rem;
     border-radius: 4px;
-    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .trips-contact-btn:hover {
     background-color: var(--secondary-hover);
 }
 
-/* Table */
 .table-container {
     width: 100%;
-    overflow-x: auto;
 }
 
 .trips-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1rem;
     text-align: left;
     border: 1px solid var(--border-light);
 }
@@ -502,7 +477,6 @@ header nav a:hover {
     background-color: var(--border-light);
 }
 
-/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -520,7 +494,6 @@ footer {
 .socialmedia a {
     text-decoration: none;
     margin-left: 10px;
-    display: inline-block;
 }
 
 .socialmedia img {
