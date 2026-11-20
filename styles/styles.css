@@ -148,3 +148,27 @@ footer {
 .activity-grid a {
     color: var(--accent-color);
 }
+
+/* Phones: stack the profile and the Eswatini card, let the menu wrap */
+@media (max-width: 700px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    aside,
+    main {
+        grid-column: auto;
+        grid-row: auto;
+        width: auto;
+    }
+
+    aside img {
+        max-width: 100%;
+        height: auto;
+    }
+}

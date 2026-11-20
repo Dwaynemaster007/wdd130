@@ -14,7 +14,7 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    width: min(840px, 100%);
     margin: 0 auto;
     background-color: #ffffff;
 }
@@ -468,4 +468,62 @@ footer {
 .socialmedia img {
     width: 28px;
     height: 28px;
+}
+/* Phones and small tablets */
+@media (max-width: 700px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 1rem;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .history-container,
+    .promo-grid,
+    .company-directory-section,
+    .form-group,
+    .newsletter-group,
+    .trips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    img,
+    iframe,
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    figure {
+        margin: 1rem 0;
+    }
+
+    .adventure-grid {
+        flex-direction: column;
+    }
+
+    /* Hero: keep the title on the photo, move the welcome card below it */
+    .hero > img {
+        height: 260px;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero article {
+        position: static;
+        margin: 1rem;
+    }
+
+    /* Let the wide trips table scroll on its own instead of stretching the page */
+    .trips-table {
+        display: block;
+        overflow-x: auto;
+    }
 }
